@@ -342,3 +342,6 @@ button:focus {
     font-family: sans-serif;
     font-weight: 300;
 }
+.sonido{
+    display: none;
+}
