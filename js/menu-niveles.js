@@ -1,7 +1,7 @@
 function escribeNiveles() {
-  var menuNiveles = document.querySelector(".selecciona-nivel ul");
+  let menuNiveles = document.querySelector(".selecciona-nivel ul");
   niveles.forEach(function(elemento, indice) {
-    var controlNivel = document.createElement("li");
+    let controlNivel = document.createElement("li");
     controlNivel.innerHTML =
       "<button class='nivel' data-nivel=" +
       indice +
@@ -13,7 +13,7 @@ function escribeNiveles() {
 }
 
 function cambiaNivel() {
-  var nivel = parseInt(this.dataset.nivel);
+  let nivel = parseInt(this.dataset.nivel);
   nivelActual = nivel;
   actualizaNivel();
   iniciar();

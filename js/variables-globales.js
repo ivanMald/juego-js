@@ -1,22 +1,22 @@
-var modoRelax = false;
-var movimientos = 0;
-var cronometro;
-var grupoTarjetas = [
+let modoRelax = false;
+let movimientos = 0;
+let cronometro;
+let grupoTarjetas = [
   ["🦄", "🍦"],
   ["🌈", "👽"],
   ["👾", "🤖", "👹", "👺"],
   ["🤡", "💩", "🎃", "🙀"],
   ["☠️", "👾", "😽", "😼"]
 ];
-var nivelActual = 0;
-var niveles = [
+let nivelActual = 0;
+let niveles = [
   {
     tarjetas: grupoTarjetas[0],
-    movimientosMax: 3
+    movimientosMax: 3,
   },
   {
     tarjetas: grupoTarjetas[0].concat(grupoTarjetas[1]),
-    movimientosMax: 8
+    movimientosMax: 8,
   },
   {
     tarjetas: grupoTarjetas[0].concat(grupoTarjetas[1], grupoTarjetas[2]),
